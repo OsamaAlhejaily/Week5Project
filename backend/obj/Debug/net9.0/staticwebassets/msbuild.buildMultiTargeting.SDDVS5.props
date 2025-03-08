@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SDDVS5.props" />
+</Project>

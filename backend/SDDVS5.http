@@ -1,0 +1,6 @@
+@SDDVS5_HostAddress = http://localhost:5206
+
+GET {{SDDVS5_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
