@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  .card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+
+  .btn {
+    font-size: 1.2rem;
+  }
+  
+
+  .table {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+
+  .badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  

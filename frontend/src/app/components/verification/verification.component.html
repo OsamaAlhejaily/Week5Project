@@ -1,0 +1,9 @@
+<div class="container mt-5">
+    <h2 class="text-center">Verify Document</h2>
+    <div class="card p-4 shadow-lg">
+      <input [(ngModel)]="verificationCode" type="text" class="form-control mb-3" placeholder="Enter Verification Code">
+      <button (click)="verifyDocument()" class="btn btn-success w-100">Verify</button>
+      <p class="text-center mt-3 fw-bold">{{ result }}</p>
+    </div>
+  </div>
+  

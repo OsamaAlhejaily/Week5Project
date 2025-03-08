@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4"> Upload Document</h2>
+    <div class="card p-4 shadow-lg">
+      <form [formGroup]="uploadForm" (ngSubmit)="uploadDocument()">
+        <div class="mb-3">
+          <label class="form-label"> Title:</label>
+          <input formControlName="title" type="text" class="form-control" placeholder="Enter document title">
+          <div *ngIf="uploadForm.controls['title'].invalid && uploadForm.controls['title'].touched" class="text-danger">
+            Title is required.
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label class="form-label"> Select File:</label>
+          <input type="file" (change)="onFileChange($event)" class="form-control">
+          <div *ngIf="uploadForm.controls['file'].invalid && uploadForm.controls['file'].touched" class="text-danger">
+            File is required.
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100" [disabled]="uploadForm.invalid">
+          Upload Document
+        </button>
+      </form>
+    </div>
+  </div>
+  
