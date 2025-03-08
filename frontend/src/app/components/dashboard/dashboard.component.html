@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4"> Document Dashboard</h2>
+    <table class="table table-hover shadow-sm bg-white rounded">
+      <thead class="table-dark">
+        <tr>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doc of documents">
+          <td>{{ doc.title }}</td>
+          <td>
+            <span class="badge bg-success" *ngIf="doc.status === 'Verified'">Verified</span>
+            <span class="badge bg-warning" *ngIf="doc.status === 'Pending'">Pending</span>
+          </td>
+          <td>{{ doc.createdAt | date:'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
